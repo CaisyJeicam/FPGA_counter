@@ -1,0 +1,9 @@
+vcom -work work -2002 -explicit ./signal_8bit.vhd
+vsim work.zad0
+view wave
+view signals
+add wave Ck
+add wave O
+force Ck 1 0, 0 {5 ns} -r 10ns
+run 2700ns
+
